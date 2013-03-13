@@ -193,12 +193,12 @@ endif " has("autocmd")
 
 
 " indenting Python
-AutoCmd BufNewFile,BufRead *.py
-    \ setlocal tabstop=4
-    \ setlocal softtabstop=4
-    \ setlocal shiftwidth=4
-    \ setlocal smarttab
-    \ setlocal expandtab
+autocmd BufNewFile,BufRead *.py
+    \ setlocal tabstop=4 | 
+    \ setlocal softtabstop=4 | 
+    \ setlocal shiftwidth=4 | 
+    \ setlocal smarttab | 
+    \ setlocal expandtab | 
     \ setlocal autoindent
     " \ setlocal textwidth=80
 
@@ -214,4 +214,3 @@ endif
 let g:BASH_AuthorName   = 'Hanquan Liang'
 let g:BASH_Email        = 'hliang /@/ ksu /dot/ edu'
 let g:BASH_Company      = 'K.S.U.'
-
