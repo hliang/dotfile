@@ -200,7 +200,7 @@ autocmd BufNewFile,BufRead *.py
     \ setlocal smarttab | 
     \ setlocal expandtab | 
     \ setlocal autoindent
-    " \ setlocal textwidth=80
+    " \ setlocal textwidth=80 
 
 
 " {{{ vimrc.local
