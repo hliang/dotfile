@@ -211,6 +211,15 @@ endif
 
 " vim: set fenc=utf-8 tw=80 sw=2 sts=2 et foldmethod=marker :
 
-let g:BASH_AuthorName   = 'Hanquan Liang'
-let g:BASH_Email        = 'hliang /@/ ksu /dot/ edu'
-let g:BASH_Company      = 'K.S.U.'
+let g:BASH_AuthorName   = 'FName LName'
+let g:BASH_Email        = 'yourname /@/ xyz /dot/ com'
+let g:BASH_Company      = 'XYZ Inc'
+
+
+" show status bar
+set laststatus=2
+
+" set status line to show file path and cursor position 
+" set statusline=
+" set statusline+=\ %f
+set statusline=\ %f%m%r%h%w\ %=%({%{&ff}\|%{(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\")}%k\|%Y}%)\ %([%l,%v][%p%%]\ %)
